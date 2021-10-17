@@ -45,3 +45,9 @@
 .main_text_2 a {
   color: yellowgreen;
 }
+
+.main_text_2 img {
+  width: 400px;
+  height: 260px;
+  border-radius: 20px;
+}
