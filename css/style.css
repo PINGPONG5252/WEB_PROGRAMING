@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&family=Rubik:wght@400;500;600;700;800;900&display=swap");
+/*screen*/
+@import "screen/webpg_menu.css";
+@import "screen/webpg_1.css";
+@import "screen/webpg_input.css";
+
+@import "status_bar.css";
+
+@import "reset.css";
+
+body {
+  color: #211026;
+  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
+}

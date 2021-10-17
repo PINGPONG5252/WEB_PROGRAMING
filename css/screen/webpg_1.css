@@ -1,0 +1,47 @@
+.main_text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 180px;
+  height: 150px;
+  font-size: 20px;
+}
+
+.text_bunshou {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main_text h3 {
+  display: block;
+  display: flex;
+  width: 400px;
+  justify-content: center;
+  margin: 10px 10px;
+  color: #9ce3ff;
+}
+.main_text :hover {
+  color: yellowgreen;
+}
+
+.text_last {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 930px;
+}
+
+.main_text_2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.main_text_2 p {
+  margin-top: 10px;
+}
+
+.main_text_2 a {
+  color: yellowgreen;
+}

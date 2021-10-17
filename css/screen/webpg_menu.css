@@ -1,0 +1,41 @@
+.menu_list {
+  margin-top: 200px;
+}
+
+.menu_list li {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #211026;
+  color: white;
+  width: 300px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 30px;
+  border-radius: 8px;
+}
+
+@keyframes rotateBar {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: rotateZ(20deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-20deg);
+  }
+}
+.menu_list li:hover {
+  animation: rotateBar 0.3s linear infinite;
+  color: #ffe936;
+}
+
+body {
+  height: 1000vh;
+}
