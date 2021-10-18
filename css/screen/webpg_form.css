@@ -1,0 +1,73 @@
+.top_button {
+  display: flex;
+  position: fixed;
+  background-color: #eeeeee;
+  color: white;
+  width: 5%;
+  padding: 5px 5px;
+  margin-left: 950px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+  border: solid 3px #211026;
+}
+
+@keyframes rotateBar {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: rotateZ(20deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-20deg);
+  }
+}
+.top_button:hover {
+  animation: rotateBar 0.3s linear infinite;
+}
+
+.main_simei {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 600px;
+  font-size: 18px;
+}
+
+.main_simei input {
+  border: none;
+  background-color: #ebebeb;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.main_simei input:focus {
+  border-bottom: 1px solid #211026;
+}
+
+.main_simei span {
+  font-size: 26px;
+}
+
+.main_simei hr {
+  margin-top: 10px 10px;
+}
+
+.hr {
+  width: 2000px;
+  height: 5px;
+  background-color: #211026;
+}
+
+.main_simei_kojin_naiyou {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_simei_kojin_naiyou li {
+  margin-top: 10px;
+}
