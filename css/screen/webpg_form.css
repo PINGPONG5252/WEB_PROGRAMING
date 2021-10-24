@@ -39,10 +39,8 @@
   font-size: 18px;
 }
 
-.main_simei input {
-  border: none;
-  background-color: #ebebeb;
-  transition: border-bottom 0.3s ease-in-out;
+.main_simei li {
+  padding: 5px;
 }
 
 .main_simei input:focus {
@@ -62,6 +60,14 @@
   height: 5px;
   background-color: #211026;
 }
+.main_simei_kojin input:not([type="radio"]) {
+  border: none;
+  border-radius: 10px;
+  width: 150px;
+  height: 25px;
+  background-color: #ebebeb;
+  transition: border-bottom;
+}
 
 .main_simei_kojin_naiyou {
   display: flex;
@@ -70,4 +76,41 @@
 
 .main_simei_kojin_naiyou li {
   margin-top: 10px;
+}
+
+.main_simei_juusho input {
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  height: 25px;
+  background-color: #ebebeb;
+  transition: border-bottom;
+}
+
+.main_simei_juusho input[name="yuubin"] {
+  width: 100px;
+}
+
+.main_simei_id input {
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 25px;
+  background-color: #ebebeb;
+  transition: border-bottom;
+}
+
+.kanryo {
+  display: flex;
+  justify-content: center;
+}
+
+.kanryo input {
+  border: none;
+  padding: 10px;
+  margin-top: 80px;
+  background-color: white;
+  border: 4px solid #211026;
+  background-color: white;
+  font-size: 35px;
 }

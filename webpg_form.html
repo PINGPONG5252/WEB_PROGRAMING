@@ -19,7 +19,13 @@
       <div><span>基本情報</span></div>
       <form class="main_simei_kojin">
         <ul class="main_simei_kojin_naiyou">
-          <li>氏名：<input type="text" name="simei" /></li>
+          <li>
+            氏名：<input
+              type="text"
+              placeholder="漢字でも英語でもいい"
+              name="simei"
+            />
+          </li>
           <li>
             性別：男性<input
               type="radio"
@@ -30,10 +36,17 @@
           <li>
             生年月日：<input type="date" name="seinen" />　 電話番号：<input
               type="text"
+              placeholder="電話番号に-なしで"
               name="denwa"
             />
           </li>
-          <li>メールアドレス：<input type="email" name="mail" /></li>
+          <li>
+            メールアドレス：<input type="email" name="mail" />@<input
+              type="email"
+              placeholder="〷〷.com"
+              name="mail2"
+            />
+          </li>
           <li><input type="submit" value="送信" /></li>
         </ul>
       </form>
@@ -45,7 +58,20 @@
             郵便番号：<input type="text" name="yuubin" />-
             <input type="text" name="yuubin" />
           </li>
-          <li>住所：<input type="text" name="yuubin" /></li>
+          <li>
+            住所：<input
+              type="text"
+              placeholder="〷県　〷市　1-2-3"
+              name="yuubin2"
+            />
+          </li>
+          <li>
+            <input
+              type="text"
+              placeholder="アパート名など詳細住所"
+              　name="yuubin3"
+            />
+          </li>
         </ul>
       </form>
       <div class="hr"></div>
