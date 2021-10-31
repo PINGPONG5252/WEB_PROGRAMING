@@ -4,6 +4,8 @@
 @import "screen/webpg_1.css";
 @import "screen/webpg_input.css";
 @import "screen/webpg_form.css";
+@import "screen/webpg_form-2.css";
+@import "screen/webpg_form-ex.css";
 
 @import "status_bar.css";
 
@@ -13,4 +15,15 @@ body {
   color: #211026;
   font-family: "Roboto", sans-serif;
   font-family: "Rubik", sans-serif;
+  background-color: #211026;
+  color: white;
 }
+
+/* php
+
+<?php>
+echo $_post["#"]
+
+?>
+
+*/

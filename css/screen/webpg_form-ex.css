@@ -1,0 +1,93 @@
+.zentai {
+  display: flex;
+  flex-direction: column;
+  margin-top: 160px;
+}
+
+.zentai input:not([type="submit"]) {
+  border: none;
+  border-radius: 10px;
+  height: 25px;
+  background-color: #ebebeb;
+  transition: border-bottom;
+}
+
+.zentai input:focus {
+  border-bottom: 4px solid #eeeeee;
+}
+.idea,
+.juushokinyuu,
+.kihonjouhou {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.juushokinyuu,
+.kihonjouhou,
+.idea,
+input {
+  margin: 10px 10px;
+}
+
+.sudai {
+  display: flex;
+  font-size: 35px;
+  margin-top: 15px;
+}
+
+.kihonjouhou {
+  display: flex;
+  width: 200px;
+}
+
+.kihonjouhou span {
+  width: 300px;
+}
+
+.yojanamja ul {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.mailsss ul {
+  display: flex;
+  width: 1000px;
+}
+
+.juushokinyuu {
+  display: flex;
+  justify-content: flex-start;
+  width: 200px;
+}
+
+.address ul {
+  display: flex;
+  width: 1000px;
+}
+
+.idea {
+  display: flex;
+  width: 200px;
+}
+
+.owari {
+  display: flex;
+  justify-content: center;
+}
+
+.owari input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  border: none;
+  margin-top: 80px;
+  background-color: white;
+  border: 4px solid #ebebeb;
+  border-radius: 15px;
+  width: 100px;
+  font-size: 35px;
+}
