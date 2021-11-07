@@ -5,27 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>WEBPG_input</title>
+    <title>WEBPG-4</title>
   </head>
+
   <body>
     <header class="top_header">
       <div class="status_bar">
         <div class="box-1">
-          <h1>令和3年10月11日 Webプログラミング１</h1>
+          <h1>練習　11月01日</h1>
         </div>
         <div class="box-2"></div>
         <div class="box-3"></div>
       </div>
     </header>
-
     <div class="top_button">
       <a href="index.html">TOP MENU</a>
     </div>
 
-    <form class="main_simei">
-      <ul>
-        <li>氏名：<input type="text" name="simei" /></li>
-      </ul>
-    </form>
+    <main>
+      <div class="zenbu">
+        <form action="20211101_5.php" method="post">
+          <div class="honnin">
+            <span>氏名:</span><input type="text" name="your_name" />
+            <span>学籍番号:</span> <input type="text" name="gakusekibango" />
+            <span>IPアドレス:</span> <input type="text" name="IP" />
+            <input type="submit" value="送信" name="go" />
+          </div>
+        </form>
+      </div>
+    </main>
   </body>
 </html>

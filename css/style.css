@@ -6,10 +6,13 @@
 @import "screen/webpg_form.css";
 @import "screen/webpg_form-2.css";
 @import "screen/webpg_form-ex.css";
+@import "screen/webpg_5.css";
+@import "screen/webpg_6.css";
 
 @import "status_bar.css";
 
 @import "reset.css";
+@import "various.css";
 
 body {
   color: #211026;

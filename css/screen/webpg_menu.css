@@ -1,39 +1,37 @@
-.menu_list {
-  margin-top: 200px;
-}
+.grid_li {
+  margin-top: 220px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 50px;
+  column-gap: 15px;
 
-.menu_list li {
-  display: block;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+
+  justify-content: space-around;
+  font-size: 40px;
+}
+.grid_li div {
   background-color: #211026;
-  color: white;
-  border: solid 5px #eeeeee;
-  width: 400px;
-  height: 50px;
-  margin-top: 10px;
-  margin-left: 40px;
-  font-size: 30px;
   border-radius: 8px;
+  border: solid 5px #eeeeee;
 }
 
-@keyframes rotateBar {
+@keyframes bong {
   0% {
     transform: none;
   }
   25% {
-    transform: rotateZ(20deg);
+    transform: rotateZ(8deg);
   }
   50% {
     transform: rotateZ(0deg);
   }
   100% {
-    transform: rotateZ(-20deg);
+    transform: rotateZ(-8deg);
   }
 }
-.menu_list li:hover {
-  animation: rotateBar 0.3s linear infinite;
+.grid_li div:hover {
+  animation: bong 0.3s linear infinite;
   color: #ffe936;
 }
 

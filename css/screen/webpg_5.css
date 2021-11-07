@@ -1,0 +1,20 @@
+.honnin {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  margin-top: 250px;
+}
+
+.honnin span {
+  font-size: 30px;
+}
+
+.honnin input {
+  height: 30px;
+}
+
+.honnin input[type="submit"] {
+  width: 100px;
+  margin-left: 390px;
+}
