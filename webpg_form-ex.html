@@ -10,7 +10,7 @@
   <body>
     <header class="top_header">
       <div class="status_bar">
-        <div class="box-1">
+        <div class="box-11">
           <h1>Form Tag 練習　10月18日</h1>
         </div>
         <div class="box-2"></div>
@@ -21,84 +21,120 @@
     <div class="top_button">
       <a href="index.html">TOP MENU</a>
     </div>
-    <main class="main_namae">
-      <div class="zentai">
-        <div class="sudai"><span>基本情報</span></div>
-        <form class="main_namae_kojin" action="form_ex.php" method="post">
-          <div class="kihonjouhou">
-            <span> 氏名：</span>
-            <input
-              type="text"
-              placeholder="漢字でも英語でもいい"
-              name="namae"
-            />
 
-            <div class="yojanamja">
-              <ul>
-                <li>性別：</li>
-                <li>
-                  男性<input type="radio" name="seibetu" value="男性" />
-                  女性<input type="radio" name="seibetu" value="女性" />
-                </li>
-              </ul>
-            </div>
+    <div class="web1_all">
+      <div class="web1-1">
+        <main class="main_namae">
+          <div class="zentai">
+            <div class="sudai"><span>基本情報</span></div>
+            <form
+              class="main_namae_kojin"
+              action="php/form_ex.php"
+              method="post"
+            >
+              <div class="kihonjouhou">
+                <span> 氏名</span>
+                <input
+                  type="text"
+                  placeholder="漢字でも英語でもいい"
+                  name="namae"
+                />
 
-            <span> 生年月日：<input type="date" name="seinen" />　 </span>
-            <span>
-              電話番号：<input
-                type="text"
-                placeholder="電話番号に-なしで"
-                name="denwa"
-              />
-            </span>
-            <div class="mailsss">
-              <span>メールアドレス：</span>
-              <ul>
-                <li>
-                  <input type="text" name="mail" />@<input
+                <div class="yojanamja">
+                  <ul>
+                    <li>性別</li>
+                    <li>
+                      男性<input type="radio" name="seibetu" value="男性" />
+                      女性<input type="radio" name="seibetu" value="女性" />
+                    </li>
+                  </ul>
+                </div>
+
+                <span> 生年月日</span><input type="date" name="seinen" />　
+                <span> 電話番号</span
+                ><input
+                  type="text"
+                  placeholder="電話番号に-なしで"
+                  name="denwa"
+                />
+
+                <div class="mailsss">
+                  <span>メールアドレス</span>
+                  <ul>
+                    <li>
+                      <input type="text" name="mail" />@<input
+                        type="text"
+                        placeholder="〷〷.com"
+                        name="mail2"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="hr"></div>
+              <div class="sudai"><span>住所記入</span></div>
+              <div class="juushokinyuu">
+                <span>郵便番号</span>
+                <div class="address">
+                  <ul>
+                    <li>
+                      <input type="text" name="yuubin" />-
+                      <input type="text" name="yuubin2" />
+                    </li>
+                  </ul>
+                </div>
+                <span> 住所</span>
+                <div class="adress2">
+                  <input
                     type="text"
-                    placeholder="〷〷.com"
-                    name="mail2"
+                    placeholder="〷県　〷市　1-2-3"
+                    name="kuwasii-yuubin"
                   />
-                </li>
-              </ul>
-            </div>
+                </div>
+              </div>
+              <div class="hr"></div>
+              <div class="sudai"><span>ログイン設定</span></div>
+              <div class="idea">
+                <span> ID</span><input type="text" name="id" />
+                <span>PASSWORD</span><input type="password" name="password" />
+              </div>
+              <div class="owari">
+                <input type="submit" name="kanryo" value="完了" />
+              </div>
+            </form>
           </div>
-
-          <div class="hr"></div>
-          <div class="sudai"><span>住所記入</span></div>
-          <div class="juushokinyuu">
-            <span>郵便番号：</span>
-            <div class="address">
-              <ul>
-                <li>
-                  <input type="text" name="yuubin" />-
-                  <input type="text" name="yuubin2" />
-                </li>
-              </ul>
-            </div>
-            <span> 住所：</span>
-            <div class="adress2">
-              <input
-                type="text"
-                placeholder="〷県　〷市　1-2-3"
-                name="kuwasii-yuubin"
-              />
-            </div>
-          </div>
-          <div class="hr"></div>
-          <div class="sudai"><span>ログイン設定</span></div>
-          <div class="idea">
-            ID：<input type="text" name="id" /> PASSWORD：<input
-              type="password"
-              name="password"
-            />
-          </div>
-          <div class="owari">
-            <input type="submit" name="kanryo" value="完了" />
-          </div>
-        </form>
+        </main>
       </div>
-    </main>
+      <div class="web1-3">
+        <div class="awaw">
+          <div class="nav_bar">
+            <div class="sisisi">
+              <section>
+                <div class="watch"><h2 id="clock">00:00:00</h2></div>
+              </section>
+              <a href="webpg_1.html">html 基本</a>
+              <a href="webpg_input.html">簡単なINPUT</a>
+              <a href="webpg_form-ex.html">ID,住所,Email</a>
+              <a href="webpg_form-2.html">INPUT, RADIO</a>
+              <a href="webpg_5.html">名前、学籍番号、IPアドレス</a>
+              <a href="webpg_6.html">合計と平均</a>
+              <a href="webpg_7.html">演算</a>
+              <a href="webpg_8.html">checkbox練習</a>
+              <a href="webpg_9.html">RANDOM</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/clock.js"></script>
   </body>
 </html>

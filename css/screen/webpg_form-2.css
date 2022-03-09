@@ -1,4 +1,9 @@
 .form-2_main_naiyou {
   display: flex;
   margin-top: 250px;
+  margin-right: 200px;
+}
+
+.form-2_main_naiyou li input[type="submit"] {
+  width: 100px;
 }

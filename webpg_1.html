@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1,maximum-scale=1, user-scalable=no"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>WEBPG-1</title>
   </head>
   <body>
     <header class="top_header">
       <div class="status_bar">
-        <div class="box-1">
+        <div class="box-11">
           <h1>令和3年10月4日　Webプログラミング１</h1>
         </div>
         <div class="box-2"></div>
@@ -20,46 +23,83 @@
     <div class="top_button">
       <a href="index.html">TOP MENU</a>
     </div>
-    <main>
-      <div class="main_text">
-        <div class="text_bunshou">
-          <p>文章の途中で改行するには<br />「呪文」が必要です。</p>
-        </div>
-        <h3>Hello world HTML</h3>
-        <div class="text_last">
+
+    <div class="web1_all">
+      <div class="web1-1">
+        <main>
+          <div class="main_text">
+            <div class="text_bunshou">
+              <p>文章の途中で改行するには<br />「呪文」が必要です。</p>
+            </div>
+            <h3>Hello world HTML</h3>
+            <div class="text_last">
+              <p>
+                “Hello world HTML”は最新の HTML 4.0 に対応したやさしい HTML
+                入門のためのチュートリアルです。
+              </p>
+              <p>
+                項目がかわったり，話題が転換するところに区切り線を引きます。
+              </p>
+            </div>
+          </div>
+          <hr />
+        </main>
+
+        <main class="main_text_2">
+          <p>これで文書が読みやすくなります。</p>
           <p>
-            “Hello world HTML”は最新の HTML 4.0 に対応したやさしい HTML
-            入門のためのチュートリアルです。
+            <a href="http://www.yahoo.co.jp/">Yahoo! JAPAN</a>
+            で検索しましょう。
           </p>
-          <p>項目がかわったり，話題が転換するところに区切り線を引きます。</p>
+
+          <p>HTML の特徴は，次のようなものがあります。</p>
+
+          <ul class="main-text_list">
+            <li>テキストファイルである。</li>
+            <li>「タグ」という「呪文」が書き込まれる。</li>
+            <li>文書の「見た目」より「つくり」を重視する。</li>
+          </ul>
+
+          <p>HTML ファイルを作る手順には，</p>
+          <ol>
+            <li>テキストエディタなどで編集する。</li>
+            <li>ブラウザで確認する。</li>
+          </ol>
+
+          <p>という方法があります。</p>
+          <p>HTML 文書中に画像を<img src="immg/GS-1.JPG" />表示させます。</p>
+          <p>wRRRRRRRRRR</p>
+        </main>
+      </div>
+
+      <div class="web1-3">
+        <div class="awaw">
+          <div class="nav_bar">
+            <div class="sisisi">
+              <section>
+                <div class="watch"><h2 id="clock">00:00:00</h2></div>
+              </section>
+              <a href="webpg_1.html">html 基本</a>
+              <a href="webpg_input.html">簡単なINPUT</a>
+              <a href="webpg_form-ex.html">ID,住所,Email</a>
+              <a href="webpg_form-2.html">INPUT, RADIO</a>
+              <a href="webpg_5.html">名前、学籍番号、IPアドレス</a>
+              <a href="webpg_6.html">合計と平均</a>
+              <a href="webpg_7.html">演算</a>
+              <a href="webpg_8.html">INPUTのCHECKBOX</a>
+              <a href="webpg_9.html">RANDOM</a>
+            </div>
+          </div>
         </div>
       </div>
-      <hr />
-    </main>
+    </div>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
 
-    <main class="main_text_2">
-      <p>これで文書が読みやすくなります。</p>
-      <p>
-        <a href="http://www.yahoo.co.jp/">Yahoo! JAPAN</a> で検索しましょう。
-      </p>
-
-      <p>HTML の特徴は，次のようなものがあります。</p>
-
-      <ul class="main-text_list">
-        <li>テキストファイルである。</li>
-        <li>「タグ」という「呪文」が書き込まれる。</li>
-        <li>文書の「見た目」より「つくり」を重視する。</li>
-      </ul>
-
-      <p>HTML ファイルを作る手順には，</p>
-      <ol>
-        <li>テキストエディタなどで編集する。</li>
-        <li>ブラウザで確認する。</li>
-      </ol>
-
-      <p>という方法があります。</p>
-      <p>HTML 文書中に画像を<img src="immg/GS-1.JPG" />表示させます。</p>
-      <p>wRRRRRRRRRR</p>
-    </main>
+    <script src="js/clock.js"></script>
   </body>
 </html>

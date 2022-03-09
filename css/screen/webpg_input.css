@@ -1,4 +1,10 @@
 .main_simei {
   display: flex;
   margin-top: 250px;
+  margin-right: 100px;
+}
+
+.nav_bar-input {
+  display: flex;
+  margin-left: none;
 }

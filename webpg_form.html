@@ -8,80 +8,107 @@
     <title>WEBPG-3</title>
   </head>
   <body>
-    <header class="status_bar">
-      <h2>Form Tag 練習　10月18日</h2>
+    <header class="top_header">
+      <div class="status_bar">
+        <div class="box-11">
+          <h1>Form Tag 練習　10月18日</h1>
+        </div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+      </div>
     </header>
     <div class="top_button">
       <a href="index.html">TOP MENU</a>
     </div>
 
-    <main class="main_simei">
-      <div><span>基本情報</span></div>
-      <form class="main_simei_kojin">
-        <ul class="main_simei_kojin_naiyou">
-          <li>
-            氏名：<input
-              type="text"
-              placeholder="漢字でも英語でもいい"
-              name="simei"
-            />
-          </li>
-          <li>
-            性別：男性<input
-              type="radio"
-              name="seibetu"
-              value="男性"
-            />女性<input type="radio" name="seibetu" value="女性" />
-          </li>
-          <li>
-            生年月日：<input type="date" name="seinen" />　 電話番号：<input
-              type="text"
-              placeholder="電話番号に-なしで"
-              name="denwa"
-            />
-          </li>
-          <li>
-            メールアドレス：<input type="email" name="mail" />@<input
-              type="email"
-              placeholder="〷〷.com"
-              name="mail2"
-            />
-          </li>
-          <li><input type="submit" value="送信" /></li>
-        </ul>
+    <form>
+      <main class="main_simei">
+        <div><span>基本情報</span></div>
+        <form class="main_simei_kojin">
+          <ul class="main_simei_kojin_naiyou">
+            <li>
+              氏名：<input
+                type="text"
+                placeholder="漢字でも英語でもいい"
+                name="namae"
+              />
+            </li>
+            <li>
+              性別：男性<input
+                type="radio"
+                name="seibetu"
+                value="男性"
+              />女性<input type="radio" name="seibetu" value="女性" />
+            </li>
+            <li>
+              生年月日：<input type="date" name="seinen" />　 電話番号：<input
+                type="text"
+                placeholder="電話番号に-なしで"
+                name="denwa"
+              />
+            </li>
+            <li>
+              メールアドレス：<input type="text" name="mail" />@<input
+                type="text"
+                placeholder="〷〷.com"
+                name="mail2"
+              />
+            </li>
+            <li><input type="submit" value="送信" /></li>
+          </ul>
+        </form>
+        <div class="hr"></div>
+        <div><span>住所記入</span></div>
+        <form class="main_simei_juusho">
+          <ul>
+            <li>
+              郵便番号：<input type="text" name="yuubin" />-
+              <input type="text" name="yuubin2" />
+            </li>
+            <li>
+              住所：<input
+                type="text"
+                placeholder="〷県　〷市　1-2-3"
+                name="kuwasii-yuubin"
+              />
+            </li>
+            <li>
+              <input
+                type="text"
+                placeholder="アパート名など詳細住所"
+                　name="kuwasii-yuubin2"
+              />
+            </li>
+            <li><input type="submit" value="送信" /></li>
+          </ul>
+        </form>
+        <div class="hr"></div>
+        <div><span>ログイン設定</span></div>
+        <form
+          class="main_simei_id"
+          action="post"
+          action="20211018_form.php"
+          method="post"
+        >
+          <ul>
+            <li>ID：<input type="text" name="id" /></li>
+            <li>PASSWORD：<input type="password" name="password" /></li>
+            <li><input type="submit" value="送信" /></li>
+          </ul>
+        </form>
+      </main>
+      <form class="kanryo">
+        <input type="submit" name="kanryo" value="完了" />
       </form>
-      <div class="hr"></div>
-      <div><span>住所記入</span></div>
-      <form class="main_simei_juusho">
-        <ul>
-          <li>
-            郵便番号：<input type="text" name="yuubin" />-
-            <input type="text" name="yuubin" />
-          </li>
-          <li>
-            住所：<input
-              type="text"
-              placeholder="〷県　〷市　1-2-3"
-              name="yuubin2"
-            />
-          </li>
-          <li>
-            <input
-              type="text"
-              placeholder="アパート名など詳細住所"
-              　name="yuubin3"
-            />
-          </li>
-        </ul>
-      </form>
-      <div class="hr"></div>
-      <div><span>ログイン設定</span></div>
-      <form class="main_simei_id">
-        <ul>
-          <li>ID：<input type="text" name="id" /></li>
-          <li>PASSWORD：<input type="password" name="password" /></li>
-        </ul>
-      </form>
-    </main>
+    </form>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/clock.js"></script>
   </body>
 </html>

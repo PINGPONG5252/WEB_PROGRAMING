@@ -12,7 +12,7 @@
     <header class="top_header">
       <div class="status_bar">
         <div class="box-11">
-          <h1>Form Tag 練習　10月25日</h1>
+          <h1>練習　11月29日</h1>
         </div>
         <div class="box-2"></div>
         <div class="box-3"></div>
@@ -24,20 +24,35 @@
 
     <div class="web1_all">
       <div class="web1-1">
-        <form class="form-2_main" action="php/20211025_form.php" method="post">
-          <div class="form-2_main_naiyou">
-            <ul>
-              <li>氏名<input type="text" name="simei" id="" /></li>
-              <li>
-                <input type="radio" name="nomimono" value="milk" id="" />牛乳
-              </li>
-              <li>
-                <input type="radio" name="nomimono" value="coke" id="" />コーラ
-              </li>
-              <li><input type="submit" value="送信" name="sousin" id="" /></li>
-            </ul>
+        <main>
+          <div class="all_jkb">
+            <form action="php/20211129_9.php" method="post">
+              <div class="jangken" id="login-form">
+                <div class="jkb_1">
+                  <select name="janagkenbo_1">
+                    <option value="0">ROCK</option>
+                    <option value="1">SCISSORS</option>
+                    <option value="2">PAPER</option>
+                  </select>
+                  <div>VS</div>
+                  <div class="ai">
+                    <img src="immg/gta-2.png" /> <span>AI</span>
+                  </div>
+                </div>
+                <div class="sentaku">
+                  <select name="jkb_sentaku" value="" id="saigo">
+                    <option name="" value="">SELECT</option>
+                    <option value="3">DRAW</option>
+                    <option value="4">WIN</option>
+                    <option value="5">LOSE</option>
+                    <option value="6">RANDOM</option>
+                  </select>
+                </div>
+                <input type="submit" value="PLESS" id="press" />
+              </div>
+            </form>
           </div>
-        </form>
+        </main>
       </div>
       <div class="web1-3">
         <div class="awaw">
@@ -61,13 +76,14 @@
       </div>
     </div>
 
+    <script src="js/setting.js"></script>
+
+    <script src="js/clock.js"></script>
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
       integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
       crossorigin="anonymous"
     ></script>
-
-    <script src="js/clock.js"></script>
   </body>
 </html>

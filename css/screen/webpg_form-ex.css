@@ -2,33 +2,70 @@
   display: flex;
   flex-direction: column;
   margin-top: 250px;
+  margin-left: 30px;
+  width: 80%;
 }
 
 .zentai input:not([type="submit"]) {
   border: none;
   border-radius: 10px;
-  height: 25px;
+  height: 30px;
   background-color: #ebebeb;
   transition: border-bottom;
+  cursor: pointer;
+}
+
+.zentai input:not([type="radio"]) {
+  box-shadow: inset 4px 4px 10px #babecc, inset -10px -10px 20px #fff;
+  transition: 0.1s ease-in-out;
 }
 
 .zentai input:focus {
-  border-bottom: 4px solid #eeeeee;
+  border-bottom: 2px solid #0d003b;
+  box-shadow: inset 1px 1px 2px #babecc, inset -2px -2px 4px #fff;
 }
+
+.sudai span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 50px;
+  font-weight: 600;
+  background-color: #702fa5;
+  border-radius: 2px;
+  text-shadow: 1.5px 1.5px 1px rgb(83, 83, 83);
+  box-shadow: 10px 10px white;
+  transition: all 0.3s ease-in-out;
+  margin-left: 30px;
+}
+
+.sudai span:hover {
+  box-shadow: -2px -2px 10px #702fa5, 2px 2px white, 4px 4px 20px #fff;
+}
+
 .idea,
 .juushokinyuu,
 .kihonjouhou {
   display: flex;
   flex-direction: column;
   font-size: 25px;
-  margin-left: 20px;
+  margin-left: 30px;
+  background: linear-gradient(#3d0255, #5a047c, #7e03af);
+  width: 600px;
+  box-shadow: inset -5px -5px 2px rgb(164, 167, 173), 5px 5px #abb2c9;
+  border-radius: 30px;
+  padding-left: 20px;
 }
 
-.juushokinyuu,
-.kihonjouhou,
-.idea,
-input {
-  margin: 10px 10px;
+.juushokinyuu input,
+.kihonjouhou input,
+.idea input {
+  margin: 30px 10px;
+}
+
+.sudai span {
+  margin-bottom: 30px;
 }
 
 .sudai {
@@ -39,11 +76,36 @@ input {
 
 .kihonjouhou {
   display: flex;
-  width: 200px;
 }
 
-.kihonjouhou span {
+.kihonjouhou input:not([type="radio"]) {
   width: 300px;
+}
+
+.mailsss input[type="text"] {
+  width: 150px;
+}
+
+.kihonjouhou,
+.juushokinyuu,
+.idea {
+  margin-left: 100px;
+}
+
+.idea span,
+.juushokinyuu span,
+.kihonjouhou span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 40px;
+  font-weight: 600;
+  background-color: #eeeeee;
+  border-radius: 2px;
+  box-shadow: 5px 5px 1px white;
+  text-shadow: 1.5px 1.5px 1px rgb(83, 83, 83);
+  margin-top: 10px;
 }
 
 .yojanamja ul {
@@ -54,23 +116,25 @@ input {
 
 .mailsss ul {
   display: flex;
-  width: 1000px;
+  width: 500px;
 }
 
 .juushokinyuu {
   display: flex;
   justify-content: flex-start;
-  width: 200px;
 }
 
 .address ul {
   display: flex;
-  width: 1000px;
+  width: 500px;
 }
 
 .idea {
   display: flex;
-  width: 200px;
+}
+
+.idea input:not([type="radio"]) {
+  width: 300px;
 }
 
 .owari {

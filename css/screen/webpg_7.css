@@ -1,0 +1,41 @@
+.enzan-all {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  background-color: #eeee;
+  width: 300px;
+  height: 60px;
+  border-radius: 10px;
+  margin-top: 220px;
+  margin-left: 200px;
+  margin-right: 740px;
+  box-shadow: 10px 10px white;
+}
+.number input {
+  width: 90px;
+  height: 30px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 1px 1px black;
+}
+.number select {
+  width: 50px;
+  height: 30px;
+}
+
+.enzan-all input[type="submit"] {
+  height: 50px;
+  width: 100px;
+  margin-left: 200px;
+}
+
+.all_jkb input[type="submit"] {
+  font-size: 60px;
+  height: 60px;
+  cursor: pointer;
+}

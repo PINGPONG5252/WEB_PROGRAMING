@@ -1,16 +1,22 @@
+.zenbu-2 {
+  display: flex;
+  margin-top: 300px;
+  margin-left: 100px;
+  background: linear-gradient(#3d0255, #5a047c, #7e03af);
+  box-shadow: inset -10px 10px #9f03dd;
+  border-radius: 50px;
+  width: 60%;
+}
 .all_kamoku {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 250px;
   padding-left: 20px;
-  height: 500px;
-  width: 500px;
   font-size: 30px;
 }
 
 .all_kamoku div {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .all_kamoku input[type="text"] {
@@ -28,7 +34,7 @@
 
 .all_kamoku input[type="submit"] {
   width: 60px;
-  height: 40px;
+  height: 50px;
   font-size: 20px;
   border: none;
   border-radius: 15px;
@@ -45,4 +51,5 @@
 .honnin_2 input[type="text"] {
   width: 150px;
   font-size: 20px;
+  margin-right: 20px;
 }

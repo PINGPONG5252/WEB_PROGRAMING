@@ -1,40 +1,212 @@
-.grid_li {
-  margin-top: 220px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 50px;
-  column-gap: 15px;
-
-  text-align: center;
-
-  justify-content: space-around;
-  font-size: 40px;
-}
-.grid_li div {
-  background-color: #211026;
-  border-radius: 8px;
-  border: solid 5px #eeeeee;
+body h4 {
+  position: fixed;
+  margin-top: 300px;
+  font-size: 800px;
+  color: white;
+  z-index: -5;
+  animation: bingle 3s infinite;
 }
 
-@keyframes bong {
+.body-watch {
+  font-size: 30px;
+  position: fixed;
+}
+
+@keyframes bingle {
   0% {
-    transform: none;
-  }
-  25% {
-    transform: rotateZ(8deg);
-  }
-  50% {
     transform: rotateZ(0deg);
   }
+
+  25% {
+    transform: rotateZ(45deg);
+  }
+
+  50% {
+    transform: rotateZ(25deg);
+  }
+
+  60% {
+    transform: scale(1.5);
+  }
+
+  75% {
+    transform: rotateZ(-30deg);
+  }
+
   100% {
-    transform: rotateZ(-8deg);
+    transform: rotateZ(-10deg);
   }
 }
-.grid_li div:hover {
-  animation: bong 0.3s linear infinite;
-  color: #ffe936;
+.all-menu {
+  display: flex;
+  justify-content: flex-end;
 }
 
-body {
-  height: 1000vh;
+.box-1 h1 {
+  font-weight: 600;
+  text-shadow: 0 0 0.5rem rgb(58, 153, 248);
+  animation: rollen 1s ease-in-out;
+}
+
+.box-11 h1 {
+  font-weight: 600;
+  text-shadow: 0 0 0.5rem rgb(58, 153, 248);
+  animation: animate 1.5s infinite;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes rollen {
+  0% {
+    text-shadow: 0%;
+    transform: rotateY(90deg);
+  }
+
+  100% {
+    text-shadow: 0 0 0.5rem #def;
+    transform: rotateY(0);
+  }
+}
+
+.grid_main {
+  width: 100%;
+}
+
+.grid_li {
+  margin-top: 250px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(1, 40%);
+  row-gap: 50px;
+
+  font-size: 37px;
+}
+
+.grid-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.grid-1:nth-child(odd) {
+  box-shadow: inset -30px -10px rgb(98, 87, 255),
+    inset 35px 15px rgb(22, 255, 243);
+}
+
+.grid-1:nth-child(even) {
+  box-shadow: -30px -10px rgb(98, 87, 255), 35px 15px rgb(22, 255, 243);
+}
+
+.grid_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: rgb(55, 52, 77);
+  border-radius: 20px 20px 0px 0px;
+  transform: translateY(60px);
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.slide_setumei {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  height: 120px;
+  font-weight: 600;
+  box-sizing: border-box;
+  border-radius: 0px 0px 20px 20px;
+  background-color: rgb(200, 142, 255);
+  transform: translateY(-60px);
+  transition: 0.5s;
+  text-shadow: -2px -2px rgb(5, 49, 192), 2px 2px black,
+    4px 4px rgb(91, 17, 175), 6px 6px rgb(96, 236, 255),
+    8px 8px rgb(145, 255, 0);
+}
+.grid-1:hover .grid_bar {
+  background-color: rgb(190, 79, 255);
+  transform: translateY(0px);
+}
+
+.grid-1:hover .slide_setumei {
+  background-color: white;
+  transform: translateY(0px);
+}
+
+.todo {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  margin-right: 80px;
+  margin-top: 270px;
+}
+
+.todo span {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+#todo-form input {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  border: none;
+  background: none;
+  border-bottom: 3px solid white;
+}
+
+#todo-form ::placeholder {
+  opacity: 0;
+}
+
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+#todo-list span {
+  margin-bottom: 5px;
+  color: #211026;
+}
+
+#todo-list button {
+  text-align: center;
+  border: none;
+  background: none;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 30px;
+  color: red;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+#todo-list button:focus {
+  color: rgb(75, 3, 3);
 }
